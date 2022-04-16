@@ -1,6 +1,6 @@
 # Makefile
 install: #инициализация
-	nmp ci
+	npm ci
 
 brain-games: #запуск файла brain-games.js
 	node bin/brain-games.js
