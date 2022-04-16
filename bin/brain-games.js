@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-
-import {userName} from '../src/cli.js';
+/* eslint-disable no-console, import/extensions */
+import { userName } from '../src/cli.js';

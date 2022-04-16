@@ -10,3 +10,7 @@ publish: # выполняет код
 
 askname: # we ask name of the player
 	node src/cli.js
+
+lint: # launch eslint
+	npx eslint .
+
