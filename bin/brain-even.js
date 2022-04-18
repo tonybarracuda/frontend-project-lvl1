@@ -25,7 +25,7 @@ const startGame = () => {
     }
     console.log('Correct!');
 
-    console.log(`Congradulations, ${userName}!`);
+    console.log(`Congratulations, ${userName}!`);
   }
 };
 
