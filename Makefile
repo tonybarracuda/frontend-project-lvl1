@@ -14,6 +14,9 @@ askname: # we ask name of the player
 lint: # launch eslint
 	npx eslint .
 
-even: # launch eslint
+even: # launch even game
 	node bin/brain-even.js
+
+calc: # launch calc game
+	node bin/brain-calc.js
 
