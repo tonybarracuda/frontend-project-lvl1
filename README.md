@@ -10,6 +10,7 @@
 
 ```
 $ brain-even
+$ brain-calc
 ```
 
 Demo:
@@ -17,3 +18,7 @@ Demo:
 ###### brain-even (demo)
 
 <a href="https://asciinema.org/a/qXURgcv7osO88wzFs5xM0Vrpl" target="_blank"><img src="https://asciinema.org/a/qXURgcv7osO88wzFs5xM0Vrpl.svg" width="200"/></a>
+
+###### brain-calc (demo)
+
+<a href="https://asciinema.org/a/cZYnsZknqJyb70gJLalll5hSM" target="_blank"><img src="https://asciinema.org/a/cZYnsZknqJyb70gJLalll5hSM.svg" width="200"/></a>
