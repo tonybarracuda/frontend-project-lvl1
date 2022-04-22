@@ -11,14 +11,19 @@
 ```
 $ brain-even
 $ brain-calc
+$ brain-gcd
 ```
 
 Demo:
 
-###### brain-even (demo)
+###### install + brain-even (demo)
 
-<a href="https://asciinema.org/a/qXURgcv7osO88wzFs5xM0Vrpl" target="_blank"><img src="https://asciinema.org/a/qXURgcv7osO88wzFs5xM0Vrpl.svg" width="200"/></a>
+<a href="https://asciinema.org/a/S188pz0wLmPMCY0b96NIBEOCB" target="_blank"><img src="https://asciinema.org/a/S188pz0wLmPMCY0b96NIBEOCB.svg" width="200"/></a>
 
 ###### brain-calc (demo)
 
-<a href="https://asciinema.org/a/cZYnsZknqJyb70gJLalll5hSM" target="_blank"><img src="https://asciinema.org/a/cZYnsZknqJyb70gJLalll5hSM.svg" width="200"/></a>
+<a href="https://asciinema.org/a/otKyRwmCMiwQXgEJzND9EcL5d" target="_blank"><img src="https://asciinema.org/a/otKyRwmCMiwQXgEJzND9EcL5d.svg" width="200"/></a>
+
+###### brain-gcd (demo)
+
+<a href="https://asciinema.org/a/lHlHbdLaogl1ZP5jL58B41Kbc" target="_blank"><img src="https://asciinema.org/a/lHlHbdLaogl1ZP5jL58B41Kbc.svg" width="200"/></a>
