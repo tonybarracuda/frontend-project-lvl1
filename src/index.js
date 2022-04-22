@@ -14,7 +14,7 @@ const logic = (startRound, rules) => {
 		const userAnswer = readlineSync.question("Your answer: ");
 		if (userAnswer !== correctAnswer) {
 			console.log(
-				`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}`
+				`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
 			);
 			console.log(`Let's try again, ${userName}`);
 			return;
