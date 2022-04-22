@@ -20,3 +20,5 @@ even: # launch even game
 calc: # launch calc game
 	node bin/brain-calc.js
 
+gcd: # launch greatest common devisor game
+	node bin/brain-gcd.js
