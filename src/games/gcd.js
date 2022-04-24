@@ -1,34 +1,28 @@
-import genRandomNumber from "../randomNum.js";
-import gameLogic from "../index.js";
+import genRandomNumber from '../randomNum.js';
+import gameLogic from '../index.js';
 
-// правила мини-игры
-const rules = "Find the greatest common divisor of given numbers.";
+const rules = 'Find the greatest common divisor of given numbers.';
 
-// пишем функцию условия раунда для определения верного ответа
-const gcd = (a, b) => {
-	if (a == 0) return b;
-	while (b != 0) {
-		if (a > b) {
-			a = a - b;
-		} else {
-			b = b - a;
-		}
-	}
-	return a;
+const gcd = (x, y) => {
+  let absX = Math.abs(x);
+  let absY = Math.abs(y);
+  while (absY) {
+    const temp = absY;
+    absY = absX % absY;
+    absX = temp;
+  }
+  return absX;
 };
 
-// задаем в константах MIN и MAX значения для создания рандома
 const min = 0;
 const max = 100;
 
-// функция раунда игры для вывода верного ответа
 const startRound = () => {
-	const firstNum = genRandomNumber(min, max);
-	const secondNum = genRandomNumber(min, max);
-	const question = `${firstNum} ${secondNum}`;
-	const correctAnswer = gcd(firstNum, secondNum);
-	return [question, String(correctAnswer)]; //экспорт переменных в корневую логику игры
+  const firstNum = genRandomNumber(min, max);
+  const secondNum = genRandomNumber(min, max);
+  const question = `${firstNum} ${secondNum}`;
+  const correctAnswer = gcd(firstNum, secondNum);
+  return [question, String(correctAnswer)];
 };
 
-// экспорт раунда в корневую игровую логику
 export default () => gameLogic(startRound, rules);
