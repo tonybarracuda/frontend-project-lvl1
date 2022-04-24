@@ -12,6 +12,7 @@
 $ brain-even
 $ brain-calc
 $ brain-gcd
+$ brain-progression
 ```
 
 Demo:
@@ -27,3 +28,5 @@ Demo:
 ###### brain-gcd (demo)
 
 <a href="https://asciinema.org/a/lHlHbdLaogl1ZP5jL58B41Kbc" target="_blank"><img src="https://asciinema.org/a/lHlHbdLaogl1ZP5jL58B41Kbc.svg" width="200"/></a>
+
+###### brain-progression (demo)

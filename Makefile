@@ -22,3 +22,6 @@ calc: # launch calc game
 
 gcd: # launch greatest common devisor game
 	node bin/brain-gcd.js
+
+prog: # launch greatest common devisor game
+	node bin/brain-progression.js
