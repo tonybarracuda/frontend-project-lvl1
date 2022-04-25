@@ -1,9 +1,9 @@
 import genRandomNumber from '../randomNum.js';
-import gameLogic from '../index.js';
+import gameEngine from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 
-const startRound = () => {
+const startGame = () => {
   const firstNumber = genRandomNumber(-10, 10);
   const step = genRandomNumber(1, 10);
   const arrLength = genRandomNumber(6, 10);
@@ -30,4 +30,4 @@ const startRound = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => gameLogic(startRound, rules);
+export default () => gameEngine(startGame, rules);

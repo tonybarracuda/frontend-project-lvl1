@@ -1,12 +1,12 @@
 import genRandomNumber from '../randomNum.js';
-import gameLogic from '../index.js';
+import gameEngine from '../index.js';
 
 const operator = ['+', '-', '*'];
 const rules = 'What is the result of the expression?';
 const min = 0;
 const max = 100;
 
-const startRound = () => {
+const calc = () => {
   const a = genRandomNumber(min, max);
   const b = genRandomNumber(min, max);
   const rand = Math.floor(Math.random() * operator.length);
@@ -24,9 +24,11 @@ const startRound = () => {
       result = a * b;
       break;
     default:
-      return false;
+      return 'format is not supported';
   }
   return [question, String(result)];
 };
 
-export default () => gameLogic(startRound, rules);
+const startGame = () => calc();
+
+export default () => gameEngine(startGame, rules);

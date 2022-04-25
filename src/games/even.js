@@ -1,5 +1,5 @@
 import genRandomNumber from '../randomNum.js';
-import gameLogic from '../index.js';
+import gameEngine from '../index.js';
 
 const isEven = (number) => number % 2 === 0;
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -7,10 +7,10 @@ const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const min = 0;
 const max = 100;
 
-const startRound = () => {
+const startGame = () => {
   const question = genRandomNumber(min, max);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => gameLogic(startRound, rules);
+export default () => gameEngine(startGame, rules);
