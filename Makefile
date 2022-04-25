@@ -14,7 +14,7 @@ askname: # we ask name of the player
 lint: # launch eslint
 	npx eslint .
 
-even: # launch even game
+even: # launch even number game
 	node bin/brain-even.js
 
 calc: # launch calc game
@@ -23,5 +23,8 @@ calc: # launch calc game
 gcd: # launch greatest common devisor game
 	node bin/brain-gcd.js
 
-prog: # launch greatest common devisor game
+prog: # launch progression game
 	node bin/brain-progression.js
+
+prime: # launch prime number game
+	node bin/brain-prime.js
