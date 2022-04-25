@@ -11,7 +11,7 @@ const calc = () => {
   const b = genRandomNumber(min, max);
   const rand = Math.floor(Math.random() * operator.length);
   const randomSym = operator[rand];
-  const question = `${a}${randomSym}${b}`;
+  const question = `${a} ${randomSym} ${b}`;
   let result = 0;
   switch (randomSym) {
     case '+':
