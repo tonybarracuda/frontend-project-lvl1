@@ -30,3 +30,5 @@ Demo:
 <a href="https://asciinema.org/a/lHlHbdLaogl1ZP5jL58B41Kbc" target="_blank"><img src="https://asciinema.org/a/lHlHbdLaogl1ZP5jL58B41Kbc.svg" width="200"/></a>
 
 ###### brain-progression (demo)
+
+<a href="https://asciinema.org/a/WQ7ArztzFHmuK3Ekw0P9ecveN" target="_blank"><img src="https://asciinema.org/a/WQ7ArztzFHmuK3Ekw0P9ecveN.svg" width="200"/></a>
