@@ -13,6 +13,7 @@ $ brain-even
 $ brain-calc
 $ brain-gcd
 $ brain-progression
+$ brain-prime
 ```
 
 Demo:
@@ -32,3 +33,7 @@ Demo:
 ###### brain-progression (demo)
 
 <a href="https://asciinema.org/a/WQ7ArztzFHmuK3Ekw0P9ecveN" target="_blank"><img src="https://asciinema.org/a/WQ7ArztzFHmuK3Ekw0P9ecveN.svg" width="200"/></a>
+
+###### brain-prime (demo)
+
+<a href="https://asciinema.org/a/7QZywW3Bjl4MGGogt3rNORBA5" target="_blank"><img src="https://asciinema.org/a/7QZywW3Bjl4MGGogt3rNORBA5.svg" width="200"/></a>
