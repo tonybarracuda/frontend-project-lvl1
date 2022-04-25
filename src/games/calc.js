@@ -3,8 +3,6 @@ import gameLogic from '../index.js';
 
 const operator = ['+', '-', '*'];
 const rules = 'What is the result of the expression?';
-
-// задаем в константах MIN и MAX значения для создания рандома
 const min = 0;
 const max = 100;
 
