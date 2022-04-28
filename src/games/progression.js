@@ -3,20 +3,21 @@ import gameEngine from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 
-const startGame = () => {
+const createProgression = (firstNumber, step, arrLength) => {
+  const result = [];
+  for (let i = firstNumber; result.length + 1 <= arrLength; i += step) {
+    result.push(i);
+  }
+  return result;
+};
+
+const generateRound = () => {
   const firstNumber = genRandomNumber(-10, 10);
   const step = genRandomNumber(1, 10);
   const arrLength = genRandomNumber(6, 10);
+  const initialProgression = createProgression(firstNumber, step, arrLength);
 
-  const createProgression = () => {
-    const result = [];
-    for (let i = firstNumber; result.length + 1 <= arrLength; i += step) {
-      result.push(i);
-    }
-    return result;
-  };
-
-  const getRandomItem = createProgression()[Math.floor(Math.random() * createProgression().length)];
+  const getRandomItem = initialProgression[Math.floor(Math.random() * initialProgression.length)];
 
   const progressionWithHiddenItem = (oldArr) => {
     const newArray = oldArr;
@@ -25,9 +26,11 @@ const startGame = () => {
     newArray[indexOfArr] = hiddenElement;
     return newArray;
   };
-  const question = progressionWithHiddenItem(createProgression()).join(' ');
+  const question = progressionWithHiddenItem(
+    createProgression(firstNumber, step, arrLength),
+  ).join(' ');
   const correctAnswer = getRandomItem;
   return [question, String(correctAnswer)];
 };
 
-export default () => gameEngine(startGame, rules);
+export default () => gameEngine(generateRound, rules);

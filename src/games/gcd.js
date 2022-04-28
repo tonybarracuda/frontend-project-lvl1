@@ -3,23 +3,23 @@ import gameEngine from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const gcd = (a, b) => {
-  if (!b) {
-    return a;
+const gcd = (num1, num2) => {
+  if (!num2) {
+    return num1;
   }
 
-  return gcd(b, a % b);
+  return gcd(num2, num1 % num2);
 };
 
-const min = 0;
-const max = 100;
+const numOne = 0;
+const numTwo = 100;
 
-const startGame = () => {
-  const firstNum = genRandomNumber(min, max);
-  const secondNum = genRandomNumber(min, max);
+const generateRound = () => {
+  const firstNum = genRandomNumber(numOne, numTwo);
+  const secondNum = genRandomNumber(numOne, numTwo);
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = gcd(firstNum, secondNum);
   return [question, String(correctAnswer)];
 };
 
-export default () => gameEngine(startGame, rules);
+export default () => gameEngine(generateRound, rules);
